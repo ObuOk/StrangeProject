@@ -1,2 +1,2 @@
 # StrangeProject
-第一次更新
+第一次更新.
