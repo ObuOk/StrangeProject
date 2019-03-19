@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "learning.hyhl.com.strangeproject"
+        applicationId "com.zgxc.strangeproject"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1

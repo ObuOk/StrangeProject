@@ -1,4 +1,4 @@
-package learning.hyhl.com.strangeproject;
+package com.zgxc.library;
 
 import org.junit.Test;
 

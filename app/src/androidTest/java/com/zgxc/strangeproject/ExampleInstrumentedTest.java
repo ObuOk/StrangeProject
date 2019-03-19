@@ -1,4 +1,4 @@
-package learning.hyhl.com.library;
+package com.zgxc.strangeproject;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("learning.hyhl.com.library.test", appContext.getPackageName());
+        assertEquals("com.zgxc.strangeproject", appContext.getPackageName());
     }
 }

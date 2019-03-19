@@ -1,4 +1,4 @@
-package learning.hyhl.com.strangeproject;
+package com.zgxc.strangeproject;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
