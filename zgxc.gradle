@@ -1,5 +1,34 @@
 ext {
 
-    dependencies = []
+    version = [
+            androidSupportSdkVersion: "28.0.0",
+            retrofitSdkVersion      : "2.4.0",
+            glideSdkVersion         : "4.8.0",
+            canarySdkVersion        : "1.5.4",
+            constraintVersion       : "1.0.2",
+            okhttp                  : "3.8.1"
+    ]
+
+    dependencies = [
+            //network
+            "retrofit"                 : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
+            "retrofit-converter-gson"  : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
+            "retrofit-adapter-rxjava2"  : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitSdkVersion"]}",
+            "okhttp"                   : "com.squareup.okhttp3:okhttp:${version["okhttp"]}",
+            "logging-interceptor"      : "com.squareup.okhttp3:logging-interceptor:${version["okhttp"]}",
+            "rxandroid2"                : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            "rxjava2"                   : "io.reactivex.rxjava2:rxjava:2.1.11",
+            "rxrelay"                  : "com.jakewharton.rxrelay2:rxrelay:2.0.0",
+
+            //tools
+            "eventbus"                  : "org.greenrobot:eventbus:3.0.0",
+            "dagger"                    : "com.google.dagger:dagger:2.13",
+            "utilcode"                  : "com.blankj:utilcode:1.12.5",
+            "easypermissions"           : "pub.devrel:easypermissions:1.0.1",
+
+            "router"                      : "com.alibaba:arouter-api:1.4.1",
+            "router-compiler"             : "com.alibaba:arouter-compiler:1.2.2"]
+
+
 
 }
