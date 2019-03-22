@@ -5,7 +5,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
-import com.ycbjie.library.BuildConfig;
+import com.zgxc.library.BuildConfig;
 
 import java.lang.reflect.Type;
 import java.security.SecureRandom;
