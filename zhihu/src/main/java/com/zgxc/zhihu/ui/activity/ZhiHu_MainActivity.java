@@ -16,7 +16,8 @@ public class ZhiHu_MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zhihu_activity_main);
-//        ARouter.getInstance().inject(this);
+
+
     }
 
 
