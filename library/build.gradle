@@ -86,6 +86,16 @@ dependencies {
         transitive = true
     }
 
+    api rootProject.ext.dependencies["design"]
+    api rootProject.ext.dependencies["palette"]
+    api rootProject.ext.dependencies["support-v4"]
+    api rootProject.ext.dependencies["cardview-v7"]
+    api rootProject.ext.dependencies["annotations"]
+    api rootProject.ext.dependencies["recyclerview-v7"]
+    api rootProject.ext.dependencies["constraint-layout"]
+    api rootProject.ext.dependencies["percent"]
+    api rootProject.ext.dependencies["multidex"]
+
     api rootProject.ext.dependencies["logging-interceptor"]
     api rootProject.ext.dependencies["okhttp"]
     api rootProject.ext.dependencies["retrofit"]
@@ -94,6 +104,15 @@ dependencies {
     api rootProject.ext.dependencies["rxrelay"]
     api rootProject.ext.dependencies["rxandroid2"]
     api rootProject.ext.dependencies["rxjava2"]
+
+    //image
+    api rootProject.ext.dependencies["glide"]
+    api rootProject.ext.dependencies["glide-compiler"]
+    api rootProject.ext.dependencies["glide-transformations"]
+    api rootProject.ext.dependencies["picasso"]
+    api rootProject.ext.dependencies["takephoto"]
+    api rootProject.ext.dependencies["imagepicker"]
+
 
     //util
     api rootProject.ext.dependencies["utilcode"]

@@ -2,7 +2,7 @@ package com.zgxc.library.http;
 
 
 import com.blankj.utilcode.util.NetworkUtils;
-import com.ycbjie.library.constant.Constant;
+import com.zgxc.library.constant.Constant;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -10,6 +10,17 @@ ext {
     ]
 
     dependencies = [
+            //support
+            "appcompat-v7"             : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "design"                   : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+            "palette"                  : "com.android.support:palette-v7:${version["androidSupportSdkVersion"]}",
+            "support-v4"               : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "cardview-v7"              : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "annotations"              : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"          : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+            "constraint-layout"        : "com.android.support.constraint:constraint-layout:${version["constraintVersion"]}",
+            "percent"                  : "com.android.support:percent:${version["androidSupportSdkVersion"]}",
+            "multidex"                 : "com.android.support:multidex:1.0.1",
             //network
             "retrofit"                 : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
             "retrofit-converter-gson"  : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
@@ -19,6 +30,14 @@ ext {
             "rxandroid2"                : "io.reactivex.rxjava2:rxandroid:2.1.0",
             "rxjava2"                   : "io.reactivex.rxjava2:rxjava:2.1.11",
             "rxrelay"                  : "com.jakewharton.rxrelay2:rxrelay:2.0.0",
+
+            //image
+            "glide"                    : "com.github.bumptech.glide:glide:${version["glideSdkVersion"]}",
+            "glide-compiler"           : "com.github.bumptech.glide:compiler:${version["glideSdkVersion"]}",
+            "glide-transformations"    : "jp.wasabeef:glide-transformations:3.3.0",
+            "picasso"                  : "com.squareup.picasso:picasso:2.5.2",
+            "takephoto"                : "com.jph.takephoto:takephoto_library:4.0.3",
+            "imagepicker"              : "com.lzy.widget:imagepicker:0.5.0",
 
             //tools
             "eventbus"                  : "org.greenrobot:eventbus:3.0.0",
