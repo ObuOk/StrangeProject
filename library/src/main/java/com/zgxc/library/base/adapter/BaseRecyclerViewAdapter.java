@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.zgxc.library.annotation.RecyclerViewItemId;
 
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.List;
 
 
@@ -27,7 +28,26 @@ public class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<BaseRecycle
         this.mDatas = datas;
         this.mActivity = activity;
         this.vh = vh;
-        int value = vh.getAnnotation(RecyclerViewItemId.class).value();
+        //组件化下使用注解不方便，原因是R文件下布局id 非常量，无法传入注解参数中，
+        // 改成反射获取
+        //      int value = vh.getAnnotation(RecyclerViewItemId.class).value();
+        int value = -1;
+        try {
+            Method getItemLayoutId = vh.getDeclaredMethod("getItemLayoutId");
+            ModelViewHolder<T> tModelViewHolder = vh.newInstance();
+            value = (int) getItemLayoutId.invoke(tModelViewHolder);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+        if (value == -1) {
+            throw new IllegalArgumentException("BaseRecyclerViewAdapter.ModelViewHolder子类的getItemLayoutId() 必须返回正确的itemId");
+        }
         mItemLayoutId = value;
 
     }
@@ -126,5 +146,6 @@ public class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<BaseRecycle
             super(itemView);
         }
         public abstract void convert(T item, BaseRecyclerViewAdapter<T> adapter, Activity activity, int position);
+        public abstract int getItemLayoutId();
     }
 }

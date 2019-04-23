@@ -1,7 +1,9 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion 28
+
 
 
 
@@ -35,6 +37,18 @@ android {
 
 }
 
+class copyRFile2R2 implements Plugin<Project> {
+
+
+    @Override
+    void apply(Project project) {
+        project.task('testa') << {
+            println '测试'
+            println project.buildDir
+        }
+    }
+}
+apply plugin: copyRFile2R2
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'

@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 
-
 android {
     compileSdkVersion 28
 
@@ -13,7 +12,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
@@ -107,7 +105,6 @@ dependencies {
 
     //image
     api rootProject.ext.dependencies["glide"]
-    api rootProject.ext.dependencies["glide-compiler"]
     api rootProject.ext.dependencies["glide-transformations"]
     api rootProject.ext.dependencies["picasso"]
     api rootProject.ext.dependencies["takephoto"]
@@ -122,8 +119,11 @@ dependencies {
 
 
     api rootProject.ext.dependencies['router']
+    api 'com.jakewharton:butterknife:8.5.1'
+
 
     annotationProcessor rootProject.ext.dependencies['router-compiler']
-
+    annotationProcessor rootProject.ext.dependencies['glide-compiler']
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 
 }
