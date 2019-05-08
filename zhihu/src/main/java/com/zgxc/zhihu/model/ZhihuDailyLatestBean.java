@@ -1,6 +1,8 @@
 package com.zgxc.zhihu.model;
 
 
+import com.zgxc.library.base.adapter.BaseRecyclerViewAdapter;
+
 import java.util.List;
 
 /**
@@ -21,9 +23,10 @@ import java.util.List;
  }
  *
  */
-public class ZhihuDailyLatestBean {
+public class ZhihuDailyLatestBean extends BaseRecyclerViewAdapter.BaseDataBean {
     private String date;
     private List<Stories> stories;
+    private List<Top_Stories> top_stories;
 
     public String getDate() {
         return date;
@@ -41,8 +44,34 @@ public class ZhihuDailyLatestBean {
         this.stories = stories;
     }
 
-    class Stories {
+    public List<Top_Stories> getTop_stories() {
+        return top_stories;
+    }
+
+    public void setTop_stories(List<Top_Stories> top_stories) {
+        this.top_stories = top_stories;
+    }
+
+    @Override
+    public int getItemViewType() {
+        return 0;
+    }
+
+    public static class Stories extends BaseRecyclerViewAdapter.BaseDataBean {
         public List<String> images;
+        public int type;
+        public int id;
+        public String ga_prefix;
+        public String title;
+        public boolean top;
+
+        @Override
+        public int getItemViewType() {
+            return 0;
+        }
+    }
+    public static class Top_Stories {
+        public String image;
         public int type;
         public int id;
         public String ga_prefix;

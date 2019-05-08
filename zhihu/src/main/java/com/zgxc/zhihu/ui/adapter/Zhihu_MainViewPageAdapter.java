@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Zhihu_MainViewPageAdapter extends FragmentPagerAdapter {
 
-    private static final String[] arr_title= {"最热"};
+    private static final String[] arr_title= {"最新","主题"};
     private List<Fragment> mFragments;
 
     public Zhihu_MainViewPageAdapter(FragmentManager fm) {

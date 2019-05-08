@@ -10,14 +10,14 @@ import com.zgxc.library.base.adapter.BaseRecyclerViewAdapter;
 import com.zgxc.zhihu.R;
 import com.zgxc.zhihu.model.ZhihuDailyLatestBean;
 
-public class Zhihu_DailyViewHolder extends BaseRecyclerViewAdapter.ModelViewHolder<ZhihuDailyLatestBean.Stories> {
+public class Zhihu_ThemeViewHolder extends BaseRecyclerViewAdapter.ModelViewHolder<ZhihuDailyLatestBean.Stories> {
 
 
     private final TextView mTv_title;
     private final ImageView mIv_desc;
     private final TextView mTv_top;
 
-    public Zhihu_DailyViewHolder(View itemView) {
+    public Zhihu_ThemeViewHolder(View itemView) {
         super(itemView);
         mTv_title = itemView.findViewById(R.id.tv_title);
         mIv_desc = itemView.findViewById(R.id.iv_desc);

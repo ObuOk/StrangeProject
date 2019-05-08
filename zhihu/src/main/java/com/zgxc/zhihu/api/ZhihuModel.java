@@ -2,6 +2,7 @@ package com.zgxc.zhihu.api;
 
 import com.zgxc.library.http.RetrofitWrapper;
 import com.zgxc.zhihu.model.ZhihuDailyLatestBean;
+import com.zgxc.zhihu.model.ZhihuThemeBean;
 
 import io.reactivex.Observable;
 
@@ -27,6 +28,10 @@ public class /**/ZhihuModel {
 
     public Observable<ZhihuDailyLatestBean> getDailyLates() {
         return mApi.getDailyLates();
+    }
+
+    public Observable<ZhihuThemeBean> getThemeList() {
+        return mApi.getThemeList();
     }
 
 
