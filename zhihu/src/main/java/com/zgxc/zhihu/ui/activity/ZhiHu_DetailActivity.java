@@ -19,7 +19,7 @@ import com.zgxc.zhihu.ui.fragment.Zhihu_ThemeFragment;
 import java.util.ArrayList;
 
 
-@Route(path = ARouterConstant.ZHIHU_MAIN_ACTIVITY)
+//@Route(path = ARouterConstant.ZHIHU_MAIN_ACTIVITY)
 public class ZhiHu_DetailActivity extends AppCompatActivity {
 
 

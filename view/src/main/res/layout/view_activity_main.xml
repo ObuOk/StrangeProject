@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.zgxc.view.ui.view.RecylePage
+       android:id="@+id/rp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#383d39"
+       android:layout_gravity="center"
+       >
+      <View
+          android:id="@+id/v1"
+          android:layout_width="120dp"
+          android:layout_height="180dp"
+          android:background="#b16e6e"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          ></View>
+      <View
+          android:id="@+id/v2"
+          android:layout_width="120dp"
+          android:layout_height="180dp"
+          android:background="#6771ce"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          ></View>
+      <View
+          android:id="@+id/v3"
+          android:layout_width="120dp"
+          android:layout_height="180dp"
+          android:background="#dd0ce2"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          ></View>
+   </com.zgxc.view.ui.view.RecylePage>
+
+</LinearLayout>
